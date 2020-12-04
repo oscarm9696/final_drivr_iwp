@@ -70,12 +70,10 @@ public class TimeHandler : MonoBehaviour
             carT[1].position = pos1[1];
             pos2.RemoveAt(0);
             pos1.RemoveAt(0);
-   
         }
         else
         {
-            StopRewind();
-           
+            StopRewind(); 
         }
         
     }
@@ -99,8 +97,7 @@ public class TimeHandler : MonoBehaviour
         Time.timeScale = 0;
         pauseBtn.gameObject.SetActive(false);
         playBtn.gameObject.SetActive(true);
-        StopRecord();
-        
+        StopRecord();   
     }
     public void PlayScene()
     {
